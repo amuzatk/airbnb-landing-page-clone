@@ -53,7 +53,7 @@ const Filter: React.FC = () => {
     setActiveFilter(filter);
     // Perform fetching logic for the selected filter and update the home listings
     // You can use an API call or a pre-defined data set to fetch the new listings based on the filter
-    // Update the listings using the fetched data
+  
   };
 
   const renderFilters = (): JSX.Element => {
