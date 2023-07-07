@@ -11,7 +11,7 @@ function App() {
       <NavBar />
      <Filter />
      <Listings />
-     {/* <Footer /> */}
+     <Footer />
     </div>
   );
 }
