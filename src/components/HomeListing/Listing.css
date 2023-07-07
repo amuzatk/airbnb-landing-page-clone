@@ -1,0 +1,15 @@
+.listings-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; */
+  }
+  
+  @media (min-width: 768px) {
+    .listings-container {
+      flex-wrap: nowrap;
+      overflow-x: auto;
+    }
+  }
+  

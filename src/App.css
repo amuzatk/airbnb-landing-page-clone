@@ -36,3 +36,32 @@
     transform: rotate(360deg);
   }
 }
+
+.image-slider {
+  position: relative;
+}
+
+.slider-image {
+  cursor: pointer;
+}
+
+.slide-arrow {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.slider-image:hover + .slide-arrow {
+  opacity: 1;
+}
