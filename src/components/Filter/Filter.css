@@ -1,3 +1,49 @@
-.main{
+/* .main{
     background-color: aqua;
-}
+} */
+
+.filter-container {
+    display: flex;
+    flex-direction: row;
+    /* overflow-x: hidden;
+    border: 1px solid red; */
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #e8e8e8;
+    border-top: 1px solid #e8e8e8;
+    /* margin: 2rem 0; */
+    /* width: 100%; */
+  }
+  
+  .filter-item {
+    /* Your existing styles... */
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* .filter-item.active { */
+    /* Your existing active styles... */
+  /* } */
+  
+  .arrow-icon {
+    /* Styling for the arrow icon */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+  }
+  
+  .arrow-icon:hover {
+    /* Styling when hovering over the arrow icon */
+    background-color: #e8e8e8;
+  }
+  
+  .filter-container.show-all .filter-item {
+    /* Additional styles when showing all filters */
+    transform: translateX(0);
+  }
+  
+  .filter-container.show-all .arrow-icon {
+    /* Hide the arrow icon when showing all filters */
+    display: none;
+  }
+  

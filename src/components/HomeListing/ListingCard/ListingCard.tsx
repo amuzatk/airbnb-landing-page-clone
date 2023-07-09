@@ -87,8 +87,8 @@ const ListingCard: React.FC<ListingCardProps> = ({
         <img
           src={listing.images[currentSlide]}
           alt={`Listing - ${listing.name} - Image ${currentSlide + 1}`}
-          width={200}
-          height={150}
+          width={300}
+          height={250}
           onClick={handleNextSlide}
           className="slider-image"
         />
