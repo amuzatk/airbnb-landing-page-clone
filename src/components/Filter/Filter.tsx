@@ -231,6 +231,7 @@ const Filter: React.FC = () => {
           flexDirection: "row",
           justifyContent: "center",
           alignItems: "center",
+          // border:'1px solid red'
         }}
       >
         {showAllFilters && (
