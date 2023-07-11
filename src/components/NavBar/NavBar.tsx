@@ -1,5 +1,5 @@
 import React from "react";
-import SearchIcon from "../../assets/icons/searchIcon.png";
+// import SearchIcon from "../../assets/icons/searchIcon.png";
 import Logo2 from "../../assets/images/airbnb_logo2-r.png";
 import { FiSearch } from "react-icons/fi";
 import "./NavBar.css";
