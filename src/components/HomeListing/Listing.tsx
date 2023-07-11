@@ -36,7 +36,7 @@ const Listings: React.FC = () => {
   };
 
   return (
-    <div className="listings-container">
+    <div className="listings-container" >
       {listingsData.map((listing, index) => (
         <ListingCard
           key={index}

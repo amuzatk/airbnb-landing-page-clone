@@ -54,8 +54,8 @@
 // };
 // export default ListingCard;
 
-import React, { useState } from 'react';
-import { RightOutlined } from '@ant-design/icons';
+import React, { useState } from "react";
+import { RightOutlined } from "@ant-design/icons";
 
 interface ListingCardProps {
   listing: Listing;
@@ -71,9 +71,7 @@ interface Listing {
   // currentSlide: number;
 }
 
-const ListingCard: React.FC<ListingCardProps> = ({
-  listing,
-}) => {
+const ListingCard: React.FC<ListingCardProps> = ({ listing }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const handleNextSlide = () => {
@@ -82,7 +80,7 @@ const ListingCard: React.FC<ListingCardProps> = ({
   };
 
   return (
-    <div className="listing-card">
+    <div className="listing-card" >
       <div className="image-slider">
         <img
           src={listing.images[currentSlide]}
@@ -108,6 +106,3 @@ const ListingCard: React.FC<ListingCardProps> = ({
 };
 
 export default ListingCard;
-
-
-
