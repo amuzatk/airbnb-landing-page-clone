@@ -90,7 +90,6 @@ const NavBar = () => {
           </div>
         </div>
         {/* Right */}
-        {/* <div className="flex items-center pr-3  font-semibold text-gray-600"> */}
         <div
           className="text"
           style={{
@@ -105,31 +104,31 @@ const NavBar = () => {
         >
           <div
             className="icon2"
-            style={{
-              border: "1px solid red",
-              height: "80%",
-              borderRadius: "26px",
-              display: "flex",
-              flexDirection: "row",
-              justifyContent: "center",
-              width: "135px",
-              alignItems: "center",
-            }}
+            // style={{
+            //   border: "1px solid red",
+            //   height: "80%",
+            //   borderRadius: "26px",
+            //   display: "flex",
+            //   flexDirection: "row",
+            //   justifyContent: "center",
+            //   width: "135px",
+            //   alignItems: "center",
+            // }}
           >
             <p className="p">Become a Host</p>
           </div>
           <div
             className="icon2"
-            style={{
-              border: "1px solid red",
-              height: "80%",
-              width: "40px",
-              borderRadius: "50%",
-              display: "flex",
-              flexDirection: "row",
-              justifyContent: "center",
-              alignItems: "center",
-            }}
+            // style={{
+            //   border: "1px solid red",
+            //   height: "80%",
+            //   width: "40px",
+            //   borderRadius: "50%",
+            //   display: "flex",
+            //   flexDirection: "row",
+            //   justifyContent: "center",
+            //   alignItems: "center",
+            // }}
           >
             <TbWorld
               fontSize={20}
