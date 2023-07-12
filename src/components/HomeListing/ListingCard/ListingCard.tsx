@@ -120,7 +120,7 @@ const ListingCard: React.FC<ListingCardProps> = ({ listing }) => {
         />
         <div className="slide-arrow" onClick={handleNextSlide}>
           {/* <RightOutlined style={{ display: "block" }} /> */}
-          <RightOutlined  />
+          <RightOutlined  style={{ display: "inlineBlock" }}/>
         </div>
       </div>
       <div
