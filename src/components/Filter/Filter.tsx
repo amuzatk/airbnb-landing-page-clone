@@ -300,7 +300,12 @@ const Filter: React.FC = () => {
               border: "1px solid #e8e8e8",
             }}
           >
-            <img src="/assets/icons/switchIcon.webp" width={25} height={20} />
+            <img
+              src="/assets/icons/switchIcon.webp"
+              alt="/assets/icons/switchIcon.webp"
+              width={25}
+              height={20}
+            />
             Filters
           </button>
         </div>

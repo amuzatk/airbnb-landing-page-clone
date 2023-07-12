@@ -29,7 +29,7 @@ import { listingsData } from '../../data/data';
 import './Listing.css'; // Import the Listings component CSS file
 
 const Listings: React.FC = () => {
-  const [currentSlide, setCurrentSlide] = useState(0);
+  const [currentSlide, setCurrentSlide] = useState<number | string>(0);
 
   const handleSlideChange = (index: number) => {
     setCurrentSlide(index);
