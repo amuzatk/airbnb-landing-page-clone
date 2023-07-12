@@ -65,3 +65,27 @@
 .slider-image:hover + .slide-arrow {
   opacity: 1;
 }
+
+/* .sticky-container {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.listings-container {
+  overflow: hidden;
+  flex: 1;
+  width: 100%; 
+  max-height: 380px; 
+} */
+
+/* .sticky-container {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.listings-container {
+  overflow-y: scroll;
+  max-height: 380px; 
+} */

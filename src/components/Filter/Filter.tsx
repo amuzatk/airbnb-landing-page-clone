@@ -224,13 +224,14 @@ const Filter: React.FC = () => {
       <div
         className="filter-container"
         style={{
-          padding: "1rem 2rem",
+          padding: "16px 40px",
           marginBottom: "2rem",
           borderTop: "1px solid #e8e8e8",
           display: "flex",
           flexDirection: "row",
           justifyContent: "center",
           alignItems: "center",
+          // border:'1px solid blue'
           // border:'1px solid red'
         }}
       >
@@ -258,6 +259,7 @@ const Filter: React.FC = () => {
                 display: "flex",
                 flexDirection: "row",
                 width: "50%",
+                // border:'1px solid red'
               }}
             >
               <div>

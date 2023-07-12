@@ -1,7 +1,10 @@
 import React from "react";
-// import SearchIcon from "../../assets/icons/searchIcon.png";
 import Logo2 from "../../assets/images/airbnb_logo2-r.png";
+import User from "../../assets/icons/user.png";
 import { FiSearch } from "react-icons/fi";
+import { TbWorld } from "react-icons/tb";
+import { FaBars } from "react-icons/fa";
+
 import "./NavBar.css";
 
 const NavBar = () => {
@@ -35,7 +38,6 @@ const NavBar = () => {
           {/* <img src='/assets/airbnb_logo.png' alt="" className="icon" /> */}
         </div>
         {/* Middle */}
-        {/* <div className="hidden lg:flex justify-center items-center relative shadow-sm shadow-gray-400 border rounded-full "> */}
         <div
           className="middle"
           style={{
@@ -43,22 +45,21 @@ const NavBar = () => {
             width: "28%",
             justifyContent: "center",
             alignItems: "center",
-            position: "relative",
+            // position: "relative",
           }}
         >
           <input
             type="search"
             placeholder=""
-            // className="py-2.5 w-[20rem] rounded-full outline-0"
             className="search"
             style={{
               borderRadius: "26px",
               height: "50px",
               width: "100%",
               border: "1px solid lightGrey",
+              position: "relative",
             }}
           />
-          {/* <div className="flex justify-between absolute w-full pr-16 pl-6 font-semibold text-gray-600"> */}
           <div
             className="butto"
             style={{
@@ -73,20 +74,19 @@ const NavBar = () => {
             <button className="first">Anywhere</button>
             <button className="second">Any week</button>
             <button className="third">Add guests</button>
-            {/* <img
-              src={SearchIcon}
-              width={25}
-              height={25}
-              style={{ borderRadius: "12px" }}
-              alt=""
-            /> */}
-             <div style={{background:'#ff5a60', borderRadius:'50%', width:'30px', height:'30px', display:'flex', justifyContent:'center', alignItems:'center'}}>
-              <FiSearch color="white" fontSize={14} fontWeight='900'/>
+            <div
+              style={{
+                background: "#ff5a60",
+                borderRadius: "50%",
+                width: "30px",
+                height: "30px",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+            >
+              <FiSearch color="white" fontSize={14} fontWeight="900" />
             </div>
-          </div>
-          {/* <div className="bg-[#ff5a60] p-2 rounded-full mr-2"> */}
-          <div className="icon-search">
-            {/* <FiSearch className="text-white w-full" /> */}
           </div>
         </div>
         {/* Right */}
@@ -94,25 +94,73 @@ const NavBar = () => {
         <div
           className="text"
           style={{
-            border: "1px solid violet",
+            // border: "1px solid violet",
             display: "flex",
             flexDirection: "row",
             justifyContent: "center",
             alignItems: "center",
+            gap: "1rem",
+            height: "50px",
           }}
         >
-          {/* <p className="text-[17px]">Rent House</p> */}
-          <p className="p">Rent House</p>
-          {/* <div className="flex items-center mx-8 gap-1"> */}
-          <div className="icon2">
-            {/* <BiWorld className="" /> */}
-            <div className="">EN</div>
+          <div
+            className="icon2"
+            style={{
+              border: "1px solid red",
+              height: "80%",
+              borderRadius: "26px",
+              display: "flex",
+              flexDirection: "row",
+              justifyContent: "center",
+              width: "135px",
+              alignItems: "center",
+            }}
+          >
+            <p className="p">Become a Host</p>
+          </div>
+          <div
+            className="icon2"
+            style={{
+              border: "1px solid red",
+              height: "80%",
+              width: "40px",
+              borderRadius: "50%",
+              display: "flex",
+              flexDirection: "row",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
+            <TbWorld
+              fontSize={20}
+            />
           </div>
 
           {/* <div className="flex items-center border px-3 py-2 rounded-full gap-2 bg-[#ff5a60] text-white font-bold shadow-lg shadow-gray-300 hover:bg-[#f9787c] duration-100 ease-out"> */}
-          <div className="action" style={{ border: "1px solid blue" }}>
-            <p>Sign in</p>
-            {/* <BiUser className="text-[22px]" /> */}
+          <div
+            className="action"
+            style={{
+              borderRadius: "26px",
+              width: "60px",
+              height: "90%",
+              border: "1px solid lightGrey",
+              gap: "10px",
+              padding: "0 10px",
+              display: "flex",
+              flexDirection: "row",
+              justifyContent: "space-between",
+              alignItems: "center",
+            }}
+          >
+            <FaBars fontSize={14} />
+            <img
+              src={User}
+              alt=""
+              width={30}
+              height={30}
+              style={{ background: "red" }}
+            />
+            {/* <p>Sign in</p> */}
           </div>
         </div>
       </div>

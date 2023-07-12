@@ -1,0 +1,14 @@
+.slide-arrow{
+    border: 1px solid rgb(60, 255, 0);
+}
+
+.slide-arrow:hover{
+    border: 1px solid rgb(255, 0, 234);
+    background: white;
+    display: inline-block;
+}
+/* .slide-arrow::before{
+    border: 1px solid rgb(255, 0, 234);
+    background: white;
+    display: block;
+} */

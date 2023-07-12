@@ -7,6 +7,8 @@
 .listings-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    padding: 0 20px;
+    /* border: 1px solid red; */
     /* flex-wrap: nowrap; */
     /* display: flex;
     flex-wrap: wrap;
