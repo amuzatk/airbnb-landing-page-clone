@@ -1,6 +1,7 @@
 import React from "react";
-import Logo2 from "../../assets/images/airbnb_logo2-r.png";
-import User from "../../assets/icons/user.png";
+// import Logo2 from "../../assets/images/airbnb_logo2-r.png";
+// import Logo2 from "../../../public/assets/icons/airbnb_logo2-r.png";
+// import User from "../../assets/icons/user.png";
 import { FiSearch } from "react-icons/fi";
 import { TbWorld } from "react-icons/tb";
 import { FaBars } from "react-icons/fa";
@@ -33,11 +34,12 @@ const NavBar = () => {
             alignItems: "center",
           }}
         >
-          <img src={Logo2} alt="" width={30} height={30} />
+          {/* <img src={Logo2} alt="" width={30} height={30} /> */}
+          <img src='/assets/icons/airbnb_logo2-r.png' width={30} height={30} alt="" className="icon" />
           <span>airbnb</span>
           {/* <img src='/assets/airbnb_logo.png' alt="" className="icon" /> */}
         </div>
-        {/* Middle */}
+        {/* Middle */} 
         <div
           className="middle"
           style={{
@@ -153,7 +155,7 @@ const NavBar = () => {
           >
             <FaBars fontSize={14} />
             <img
-              src={User}
+              src='/assets/icons/user.png'
               alt=""
               width={30}
               height={30}
