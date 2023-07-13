@@ -124,6 +124,8 @@ import { PiHeart } from "react-icons/pi";
 
 interface ListingCardProps {
   listing: Listing;
+  currentSlide: number;
+  handleSlideChange: (index: number) => void;
 }
 
 interface Listing {
@@ -133,9 +135,10 @@ interface Listing {
   availableDates: string;
   costPerNight: number;
   averageRating: number;
+ 
 }
 
-const ListingCard: React.FC<ListingCardProps> = ({ listing }) => {
+const ListingCard: React.FC<ListingCardProps> = ({ listing,  }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isFavorite, setIsFavorite] = useState(false);
 
@@ -156,14 +159,15 @@ const ListingCard: React.FC<ListingCardProps> = ({ listing }) => {
     <div className="listing-card" style={{ maxHeight: "460px" }}>
       <div className="image-slider">
         <img
-          src={listing.images[currentSlide]}
-          alt={`Listing - ${listing.name} - Image ${currentSlide + 1}`}
-          width={295}
-          height={300}
-          onClick={handleImageClick}
-          className="slider-image"
-          style={{ borderRadius: "1rem" }}
-        />
+  src={listing.images[currentSlide]}
+  alt={`Listing: ${listing.name} - ${listing.host}`}
+  width={295}
+  height={300}
+  onClick={handleImageClick}
+  className="slider-image"
+  style={{ borderRadius: "1rem" }}
+/>
+
         <div className="slide-arrow" onClick={handleNextSlide}>
           <RightOutlined style={{ display: "block" }} />
         </div>
