@@ -66,26 +66,36 @@
   opacity: 1;
 }
 
-/* .sticky-container {
-  position: sticky;
-  top: 0;
-  z-index: 1;
+/* NEW STYLE AFTER MAP INTEGRATION */
+/* App.css */
+body {
+  margin: 0;
+  padding: 0;
 }
 
-.listings-container {
-  overflow: hidden;
-  flex: 1;
-  width: 100%; 
-  max-height: 380px; 
-} */
-
-/* .sticky-container {
-  position: sticky;
-  top: 0;
-  z-index: 1;
+.app-container {
+  position: relative;
 }
 
-.listings-container {
-  overflow-y: scroll;
-  max-height: 380px; 
-} */
+.navbar {
+  position: sticky;
+  top: 0;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+.header {
+  position: sticky;
+  top: 40px;
+  background-color: #f0f0f0;
+  padding: 10px;
+}
+
+.footer {
+  position: sticky;
+  bottom: 0;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}

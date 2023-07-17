@@ -1,0 +1,16 @@
+.sticky-button-container {
+    position: fixed;
+    bottom: 160px;
+    right: 640px; 
+    z-index: 9999; 
+  }
+  
+  .sticky {
+    background-color: #4285f4;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
