@@ -1,10 +1,8 @@
 import React from "react";
-// import Logo2 from "../../assets/images/airbnb_logo2-r.png";
-// import Logo2 from "../../../public/assets/icons/airbnb_logo2-r.png";
-// import User from "../../assets/icons/user.png";
 import { FiSearch } from "react-icons/fi";
 import { TbWorld } from "react-icons/tb";
 import { FaBars } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 import "./NavBar.css";
 
@@ -35,11 +33,19 @@ const NavBar = () => {
           }}
         >
           {/* <img src={Logo2} alt="" width={30} height={30} /> */}
-          <img src='/assets/icons/airbnb_logo2-r.png' width={30} height={30} alt="" className="icon" />
+          <Link to="/">
+            <img
+              src="/assets/icons/airbnb_logo2-r.png"
+              width={30}
+              height={30}
+              alt=""
+              className="icon"
+            />
+          </Link>
           <span>airbnb</span>
           {/* <img src='/assets/airbnb_logo.png' alt="" className="icon" /> */}
         </div>
-        {/* Middle */} 
+        {/* Middle */}
         <div
           className="middle"
           style={{
@@ -132,9 +138,7 @@ const NavBar = () => {
             //   alignItems: "center",
             // }}
           >
-            <TbWorld
-              fontSize={20}
-            />
+            <TbWorld fontSize={20} />
           </div>
 
           {/* <div className="flex items-center border px-3 py-2 rounded-full gap-2 bg-[#ff5a60] text-white font-bold shadow-lg shadow-gray-300 hover:bg-[#f9787c] duration-100 ease-out"> */}
@@ -155,7 +159,7 @@ const NavBar = () => {
           >
             <FaBars fontSize={14} />
             <img
-              src='/assets/icons/user.png'
+              src="/assets/icons/user.png"
               alt=""
               width={30}
               height={30}
