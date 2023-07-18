@@ -1,14 +1,14 @@
+/* StickyButton.css */
 .sticky-button-container {
     position: fixed;
-    bottom: 160px;
-    right: 640px; 
-    z-index: 9999;
-    
-    /* background: aqua; */
+    bottom: 160px; /* Adjust the distance from the bottom as needed */
+    right: 640px; /* Adjust the distance from the right as needed */
+    z-index: 9999; /* Make sure the button is on top of other elements */
   }
   
   .sticky {
-    /* background-color: #4285f4; */
+    /* Add your styles for the sticky button here */
+    background-color: #4285f4;
     color: white;
     padding: 10px 20px;
     font-size: 16px;

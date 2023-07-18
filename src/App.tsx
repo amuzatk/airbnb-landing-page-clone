@@ -5,7 +5,7 @@ import Filter from "./components/Filter/Filter";
 import Listings from "./components/HomeListing/Listing";
 import NavBar from "./components/NavBar/NavBar";
 import Footer from "./components/Footer/Footer";
-import MapComponent from "./components/Map/MapComponent";
+import MapboxMap from "./components/Map/MapboxMap";
 
 const App: React.FC = () => {
   return (
@@ -15,7 +15,8 @@ const App: React.FC = () => {
         <Filter />
         <Routes>
         <Route path="/" element={<Listings />} />
-        <Route path="/map" element={<MapComponent onShowListClick={() => {}} />} />
+        <Route path="/map" element={<MapboxMap onShowListClick={() => {}} accessToken={process.env.REACT_APP_MAPBOX_ACCESS_TOKEN} />} />
+
         </Routes>
         <Footer />
       </div>
