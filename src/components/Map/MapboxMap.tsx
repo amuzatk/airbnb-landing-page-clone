@@ -27,7 +27,7 @@ const MapboxMap: React.FC<MapboxMapProps> = ({ accessToken='', onShowListClick }
   }, [accessToken]);
 
   return (
-  <div id="map" style={{ position: 'absolute', top: 0, bottom: 0, width: '100%' }}>
+  <div id="map" style={{ position: 'absolute', top:150, bottom: 0, width: '100%' }}>
       <StickyButton linkTo="/" buttonLabel="Show List" />
   </div>
   );
